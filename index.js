@@ -11,7 +11,7 @@ let getUser = () => {
 
       details.innerHTML = `<h2>${data.first_name} ${data.last_name}</h2>
             <h4>${data.employment.title}</h4>
-            <h5><img src="../asset/lokaasi.png"> ${data.address.city}</h5>`;
+            <h5><img src="./asset/lokaasi.png"> ${data.address.city}</h5>`;
       let randomColor =
         "#" + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, "0");
       document.documentElement.style.setProperty("--theme-color", randomColor);
